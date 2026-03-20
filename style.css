@@ -222,7 +222,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 .left-menu,
 .right-menu {
@@ -544,6 +544,123 @@ footer span {
     height: 40vh;
   }
 }
+@media (max-width: 1070px) {
+  .about img {
+    display: none;
+  }
+  .left {
+    text-align: center;
+  }
+}
+
+/* Responsive Styles */
+
+/* أقل من 800px */
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    gap: 30px;
+    padding: 1% 2%;
+  }
+  nav ul {
+    width: 100%;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
+  .info h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .about-head h2 {
+    font-weight: 500;
+  }
+  .dishes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .offers-head h3 {
+    font-size: 30px;
+  }
+  .menu-head h4 {
+    font-size: 30px;
+  }
+  .mini-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    width: 70%;
+  }
+  .time {
+    display: flex;
+    flex-direction: column;
+  }
+  .galleries {
+    display: flex;
+    flex-direction: column;
+  }
+  .galleries img {
+    width: 80%;
+    margin: auto;
+    height: 40vh;
+  }
+  .mini-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact a {
+    width: 60%;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  footer span {
+    font-size: 15px;
+  }
+}
+
+/* ما بين 500px و 800px */
+@media (min-width: 500px) and (max-width: 800px) {
+  nav ul li a {
+    font-size: 22px;
+  }
+  .info h1 {
+    font-size: 30px;
+  }
+  .info p {
+    font-size: 22px;
+  }
+  .dishes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .dish {
+    width: 45%;
+  }
+  .dish3 {
+    margin: auto;
+  }
+  .time {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .time div {
+    width: 45%;
+  }
+  .galleries {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galleries img {
+    width: 45%;
+    margin: auto;
+    height: 40vh;
+  }
+}
+
+/* أقل من 1070px */
 @media (max-width: 1070px) {
   .about img {
     display: none;
